@@ -1,0 +1,261 @@
+*{margin: 0;box-sizing: border-box;}
+@font-face {
+    font-family: 'Permanent Market';
+    src: url('../fonts/PermanentMarker-Regular.ttf');
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+}
+header div{
+    box-sizing: border-box;
+    color: aliceblue;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 160px;
+    width: 20%;
+}
+
+header div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Permanent Market';
+    font-weight:bold;
+    color: rgb(16, 16, 16);
+    text-decoration: none;
+    transition: background .4s;
+}
+
+header div a:hover{
+    color: #fff;
+    background: rgb(213, 13, 13);
+    border-bottom: 2px solid rgb(147, 1, 1);
+
+}
+
+header div img{
+    width: 55%;
+}
+
+.bgtaco{
+    box-shadow: 5px 10px 18px #070707;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 490px;
+    background-image: url(../img/bgtaco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgtaco h1{
+    text-align: center;
+    font-family: 'Permanent Market';
+    font-size: 3.5em;
+    color:#fff;
+    text-shadow: 4px 3px 1px #000;
+}
+
+.bgtaco h4{
+    text-align: center;
+    font-size: 1.25em;
+    color: aliceblue;
+    text-anchor: middle;
+    text-shadow: 4px 3px 1px #000;
+}
+/* Fin Header */
+
+/* Seccion Conocenos */
+.about{
+    width: 100%;
+    box-shadow: 5px 10px 18px #070707;
+}
+
+.about .wrap{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0px 45px;
+}
+ .wrap .box{
+    color: rgb(0, 0, 0);
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+ }
+
+ .box h1{
+    font-size: 2.5em;
+    font-family: 'Permanent Market';
+
+ }
+
+ .box img{
+    width: 70%;
+ }
+
+ /* Fin Conocenos */
+
+
+ /* Menu */
+    .menu-header{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Permanent Market';
+        text-shadow: 4px 3px 1px #000;
+        height: 220px;
+        background: url(../img/page-title-menu.jpg);
+        background-size: cover;
+    }
+
+    .menu-body{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    .menu-body .box{
+        min-height: 400px;
+        padding: 30px 60px;
+        width: 50%;
+    }
+
+    .menu-body .box .data-list{
+        font-size: 24px;;
+    }   
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #c1c1c1;
+       
+
+    }
+
+    .menu div:nth-child(2){
+        font-size: 24px;
+        font-family: 'Permanent Market';
+    }  
+
+    .menu-body .box h1{
+        text-align: center;
+        text-align: center;
+    }
+ /* Fin Menu */
+
+
+ /* Section Footer */
+
+ footer{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: url(../img/footer-bg.jpg);
+    background-size: cover;
+    padding: 55px 0px;
+    text-align: left;
+    width: 100%;
+ }
+ footer .box-footer .content{
+    width: 80%;
+ }
+
+ footer .box-footer{
+    display: flex;
+    width: 30%;
+ }
+
+ .box-footer .content h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Permanent Market';
+    text-shadow: 4px 4px 1px #000;
+ }
+
+ .box-footer .content p{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: #fff;
+    text-align: justify;
+ }
+
+ /* Fin Footer */
+
+
+
+
+
+ /* @media only screen and (min-width: 769px) and (max-width: 1366px) {
+    body {
+      background-color: red;
+    }
+  } */
+
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    header div{
+        min-height: 80px;
+    }
+
+    header div:nth-child(3) {
+        order: -1;
+        width: 100%;
+    }
+
+    header div img{
+        width: 25%;
+    }
+
+    footer .box-footer{    
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 50%;
+
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 576px) {
+      body {
+        background-color: blightgreen;
+      }
+
+      header div{
+        width: 25%;
+        min-height: 80px;
+     }
+  
+      header div:nth-child(3) {
+          order: -1;
+          width: 100%;
+      }
+  
+      header div img{
+          width: 25%;
+      }
+
+      
+      footer .box-footer{    
+        justify-content: center;
+        margin-bottom: 60px;
+        width: 90%;
+
+      }   
+  }
